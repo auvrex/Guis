@@ -1,0 +1,205 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GameGuis = Instance.new("ScreenGui")
+local gameguis = Instance.new("ImageLabel")
+local gameguiswd = Instance.new("TextButton")
+local gameguisrf = Instance.new("TextButton")
+local gameguisgvb = Instance.new("TextButton")
+local gameguiserf = Instance.new("TextButton")
+local gameguistitle = Instance.new("TextLabel")
+local gameguisclose = Instance.new("TextButton")
+local gameguisopen = Instance.new("TextButton")
+local gameguisopen_Roundify_12px = Instance.new("ImageLabel")
+
+--Properties:
+
+GameGuis.Name = "GameGuis"
+GameGuis.Parent = game.CoreGui
+
+gameguis.Name = "gameguis"
+gameguis.Parent = GameGuis
+gameguis.Active = true
+gameguis.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gameguis.BackgroundTransparency = 1.000
+gameguis.Position = UDim2.new(0.387461454, 0, 0.280898869, 0)
+gameguis.Size = UDim2.new(0, 184, 0, 220)
+gameguis.Visible = false
+gameguis.Image = "rbxassetid://3570695787"
+gameguis.ImageColor3 = Color3.fromRGB(34, 34, 34)
+gameguis.ScaleType = Enum.ScaleType.Slice
+gameguis.SliceCenter = Rect.new(100, 100, 100, 100)
+gameguis.SliceScale = 0.120
+gameguis.Draggable = true
+
+gameguiswd.Name = "gameguiswd"
+gameguiswd.Parent = gameguis
+gameguiswd.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+gameguiswd.BorderColor3 = Color3.fromRGB(34, 34, 34)
+gameguiswd.Position = UDim2.new(0.0217391308, 0, 0.163636357, 0)
+gameguiswd.Size = UDim2.new(0, 175, 0, 43)
+gameguiswd.Font = Enum.Font.GothamBlack
+gameguiswd.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameguiswd.Text = "GUI 1"
+gameguiswd.TextSize = 14.000
+gameguiswd.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/auvrex/auvrex/main/bgs1"))()
+
+end)
+
+gameguisrf.Name = "gameguisrf"
+gameguisrf.Parent = gameguis
+gameguisrf.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+gameguisrf.BorderColor3 = Color3.fromRGB(34, 34, 34)
+gameguisrf.Position = UDim2.new(0.0217391308, 0, 0.359090924, 0)
+gameguisrf.Size = UDim2.new(0, 175, 0, 43)
+gameguisrf.Font = Enum.Font.GothamBlack
+gameguisrf.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameguisrf.Text = "none"
+gameguisrf.TextSize = 14.000
+gameguisrf.MouseButton1Down:connect(function()
+
+end)
+
+gameguisgvb.Name = "gameguisgvb"
+gameguisgvb.Parent = gameguis
+gameguisgvb.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+gameguisgvb.BorderColor3 = Color3.fromRGB(34, 34, 34)
+gameguisgvb.Position = UDim2.new(0.0217391308, 0, 0.554545462, 0)
+gameguisgvb.Size = UDim2.new(0, 175, 0, 43)
+gameguisgvb.Font = Enum.Font.GothamBlack
+gameguisgvb.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameguisgvb.Text = "none"
+gameguisgvb.TextSize = 14.000
+gameguisgvb.MouseButton1Down:connect(function()
+
+end)
+
+gameguiserf.Name = "gameguiserf"
+gameguiserf.Parent = gameguis
+gameguiserf.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+gameguiserf.BorderColor3 = Color3.fromRGB(34, 34, 34)
+gameguiserf.Position = UDim2.new(0.0217391308, 0, 0.75, 0)
+gameguiserf.Size = UDim2.new(0, 175, 0, 43)
+gameguiserf.Font = Enum.Font.GothamBlack
+gameguiserf.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameguiserf.Text = "ANTIAFK"
+gameguiserf.TextSize = 14.000
+gameguiserf.MouseButton1Down:connect(function()
+
+local antiafkadvanced = Instance.new("ScreenGui")
+local Framee = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+antiafkadvanced.Name = "antiafkadvanced"
+antiafkadvanced.Parent = game.CoreGui
+
+Framee.Name = "Frame"
+Framee.Parent = antiafkadvanced
+Framee.Active = true
+Framee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Framee.BackgroundTransparency = 1.000
+Framee.Position = UDim2.new(0.0242248178, 0, 0.0369181335, 0)
+Framee.Size = UDim2.new(0, 145, 0, 102)
+Framee.Image = "rbxassetid://3570695787"
+Framee.ImageColor3 = Color3.fromRGB(34, 34, 34)
+Framee.ScaleType = Enum.ScaleType.Slice
+Framee.SliceCenter = Rect.new(100, 100, 100, 100)
+Framee.SliceScale = 0.120
+Framee.Draggable = true
+
+TextLabel.Parent = Framee
+TextLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TextLabel.BorderColor3 = Color3.fromRGB(34, 34, 34)
+TextLabel.Position = UDim2.new(0.068965517, 0, 0.0588235296, 0)
+TextLabel.Size = UDim2.new(0, 127, 0, 26)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "AntiAFK Advanced"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Framee
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+TextLabel_2.BorderColor3 = Color3.fromRGB(34, 34, 34)
+TextLabel_2.Position = UDim2.new(0.068965517, 0, 0.372549027, 0)
+TextLabel_2.Size = UDim2.new(0, 127, 0, 58)
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = "ANTIAFK ON"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 16.000
+TextLabel_2.TextWrapped = true
+
+local bb = game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+
+	bb:CaptureController()
+	bb:ClickButton2(Vector2.new())
+	TextLabel_2.Text = "ROBLOX just tried to fuck you"
+	wait(3)
+	TextLabel_2.Text = "ANTIAFK ON"
+end)	
+end)
+
+
+gameguistitle.Name = "gameguistitle"
+gameguistitle.Parent = gameguis
+gameguistitle.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+gameguistitle.BorderColor3 = Color3.fromRGB(34, 34, 34)
+gameguistitle.Position = UDim2.new(0.0434782617, 0, 0.0318181813, 0)
+gameguistitle.Size = UDim2.new(0, 171, 0, 29)
+gameguistitle.Font = Enum.Font.GothamBlack
+gameguistitle.Text = "GameGuis Advanced"
+gameguistitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameguistitle.TextSize = 14.000
+
+gameguisclose.Name = "gameguisclose"
+gameguisclose.Parent = gameguis
+gameguisclose.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+gameguisclose.BorderColor3 = Color3.fromRGB(34, 34, 34)
+gameguisclose.Position = UDim2.new(0.910000026, 0, 0.0318181813, 0)
+gameguisclose.Size = UDim2.new(0, 11, 0, 22)
+gameguisclose.Font = Enum.Font.GothamBlack
+gameguisclose.Text = "X"
+gameguisclose.TextColor3 = Color3.fromRGB(255, 255, 255)
+gameguisclose.TextSize = 14.000
+gameguisclose.MouseButton1Down:connect(function()
+	gameguis.Visible = false
+	gameguisopen.Visible = true
+end)
+
+gameguisopen.Name = "gameguisopen"
+gameguisopen.Parent = GameGuis
+gameguisopen.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+gameguisopen.BackgroundTransparency = 1.000
+gameguisopen.BorderColor3 = Color3.fromRGB(34, 34, 34)
+gameguisopen.BorderSizePixel = 0
+gameguisopen.Position = UDim2.new(0, 0, 0.690208614, 0)
+gameguisopen.Size = UDim2.new(0, 50, 0, 37)
+gameguisopen.Font = Enum.Font.SourceSans
+gameguisopen.Text = ""
+gameguisopen.TextColor3 = Color3.fromRGB(0, 0, 0)
+gameguisopen.TextSize = 14.000
+gameguisopen.MouseButton1Down:connect(function()
+	gameguis.Visible = true
+	gameguisopen.Visible = false
+end)
+
+gameguisopen_Roundify_12px.Name = "gameguisopen_Roundify_12px"
+gameguisopen_Roundify_12px.Parent = gameguisopen
+gameguisopen_Roundify_12px.Active = true
+gameguisopen_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+gameguisopen_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gameguisopen_Roundify_12px.BackgroundTransparency = 1.000
+gameguisopen_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+gameguisopen_Roundify_12px.Selectable = true
+gameguisopen_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+gameguisopen_Roundify_12px.Image = "rbxassetid://3570695787"
+gameguisopen_Roundify_12px.ImageColor3 = Color3.fromRGB(34, 34, 34)
+gameguisopen_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+gameguisopen_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+gameguisopen_Roundify_12px.SliceScale = 0.120
